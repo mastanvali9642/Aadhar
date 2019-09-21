@@ -13,7 +13,7 @@ public class AadharService {
 	
 	
 	public Aahdar getAadharInfo(int no) {
-		System.out.println(no);
+	
 	return restTemplate.getForObject("http://localhost:6326/adhar/adhar/{no}", Aahdar.class,no);
 		
 	}
