@@ -11,9 +11,8 @@ public class AadharService {
 	@Autowired
 	RestTemplate restTemplate;
 	
-	
-	public Aahdar getAadharInfo(int no) {
-	
+public Aahdar getAadharInfo(int no) {
+	System.out.println("hello");
 	return restTemplate.getForObject("http://localhost:6326/adhar/adhar/{no}", Aahdar.class,no);
 		
 	}
